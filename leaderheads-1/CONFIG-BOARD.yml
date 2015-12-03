@@ -1,0 +1,37 @@
+  example-leaderheads1:
+    title:
+      text:
+      - '&c&lDarwin&4&lAwards'
+      interval: -1
+      random: false
+    top1: #Line 1 = #1
+      text:
+      # |{leaderheads_score:deaths#1}|
+      #     This part replaces the red number on the side
+      #     with the amount of deaths. (more deaths = higher number = top)
+      # &a{leaderheads_players:deaths#1}
+      #     This part will show the player name with the corresponding
+      #     deaths.
+      - '|{leaderheads_score:deaths#1}|&a{leaderheads_players:deaths#1}'
+      interval: 10
+      random: false
+    top2:
+      text:
+      - '|{leaderheads_score:deaths#2}|&e{leaderheads_players:deaths#2}'
+      interval: 10
+      random: false
+    top3:
+      text:
+      - '|{leaderheads_score:deaths#3}|&6{leaderheads_players:deaths#3}'
+      interval: 10
+      random: false
+    top4:
+      text:
+      - '|{leaderheads_score:deaths#4}|&c{leaderheads_players:deaths#4}'
+      interval: 10
+      random: false
+    top5:
+      text:
+      - '|{leaderheads_score:deaths#5}|&4{leaderheads_players:deaths#5}'
+      interval: 10
+      random: false

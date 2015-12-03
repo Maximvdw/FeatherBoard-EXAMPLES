@@ -1,0 +1,35 @@
+  example-hub1:
+    title:
+        # &aMyNetwork
+        #   This part just shows the network name
+        # &7({bungeecount})
+        #   This part shows the total player count
+        text:
+        - '&aMyNetwork &7({bungeecount})'
+        interval: 20
+        random: false
+    server-1:
+        text:
+        # |{onlineplayers@SERVER1}|
+        #   This part changes the numbers on the side depending
+        #   on the amount of players.
+        #   SERVER1 is the BungeeCord name
+        # {isonline@server1.myserver.com}
+        #   This part returns green or red depending on if the
+        #   server is online or offline. This is the server IP(:port)
+        # &l/server1
+        #   This is just a static part showing the /command to use too
+        #   go to the server. (You can just put a name here)
+        - '|{onlineplayers@SERVER1}|{isonline@server1.myserver.com}&l/server1'
+        interval: 20
+        random: false
+    server-2:
+        text:
+        - '|{onlineplayers@SERVER2}|{isonline@server2.myserver.com}&l/server2'
+        interval: 20
+        random: false
+    server-3:
+        text:
+        - '|{onlineplayers@SERVER3}|{isonline@server3.myserver.com}&l/server3'
+        interval: 20
+        random: false
